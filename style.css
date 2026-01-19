@@ -1,0 +1,60 @@
+.about-container {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.429), rgba(102, 99, 99, 0.425)), url(./assets/about.banner-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about-content {
+    font-size: clamp(28px, 5vw, 65px);
+}
+
+
+.contact-container {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.429), rgba(102, 99, 99, 0.425)), url(./assets/contact.banner.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.contact-content{
+    font-size: 65px;
+}
+
+.packages-container {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.429), rgba(102, 99, 99, 0.425)), url(./assets/packages-banner.jpg
+    );
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+/* ///////////////////////////////////// */
+}
+
+.Feedback-form{
+    width: 500px;
+} 
+
+@media (max-width: 780px) {
+
+.Feedback-form{
+    width: 320px;
+} 
+
+    
+}

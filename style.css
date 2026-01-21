@@ -1,60 +1,362 @@
-.about-container {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: lightgray;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(32, 67, 131);
+}
+
+
+.logo img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.pages a {
+    color: rgb(32, 67, 131);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.pages button {
+    padding: 10px;
+    background-color: rgb(228, 228, 72);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+
+
+.container {
     width: 100%;
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.429), rgba(102, 99, 99, 0.425)), url(./assets/about.banner-1.jpg);
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.473)), url(./assets/bg.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+
+.content {
+    width: 600px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.content h1 {
+    margin: 10px;
+    color: rgb(241, 241, 19);
+    font-size: 40px;
+}
+
+.content h3 {
+    margin: 10px;
+
+}
+
+.content p {
+    margin: 10px;
+}
+
+
+.content button {
+    margin: 10px;
+    padding: 10px;
+    background-color:rgb(238, 238, 40);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+/* ========Start About CSS========= */
+
+
+.about {
+    padding: 50px;
 }
 
 .about-content {
-    font-size: clamp(28px, 5vw, 65px);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.about-content-right {
+    margin-left: 50px;
 }
 
 
-.contact-container {
-    width: 100%;
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.429), rgba(102, 99, 99, 0.425)), url(./assets/contact.banner.jpg);
-    background-position: center;
-    background-size: cover;
+/* =======Start Education======== */
+
+
+.education {
+    padding: 50px;
+    text-align: center;
+    background-color: lightgray;
+
+
+}
+
+.education-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-
 }
 
-.contact-content{
-    font-size: 65px;
-}
-
-.packages-container {
-    width: 100%;
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.429), rgba(102, 99, 99, 0.425)), url(./assets/packages-banner.jpg
-    );
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-/* ///////////////////////////////////// */
-}
-
-.Feedback-form{
+.education-left {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
     width: 500px;
-} 
+    margin: 20px;
+}
 
-@media (max-width: 780px) {
 
-.Feedback-form{
-    width: 320px;
-} 
+.education-left:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
 
-    
+
+
+.education-right {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+}
+
+.education-right:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s;
+}
+
+/* =======Start Skills========== */
+
+.skills{
+    text-align: center;
+    padding: 50px;
+}
+
+.show-skills{
+    background-color: rgb(255, 255, 172);
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs{
+    background-color: rgb(32, 67, 131);
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 8px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.programs:hover{
+    background-color: black;
+    color: yellow;
+    transition: 1s;
+}
+.gallery{
+    padding: 25px;
+    text-align: center;
+}
+.all-images{
+    padding: 40px;
+
+}
+/* ======================= */
+.footer{
+    background-color:rgb(32, 67, 131);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-footer a{
+color: white;
+font-size: 20px;
+}
+
+
+.right-footer a{
+color: white;
+font-size: 25px;
+
+}
+
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+
+/* ========== Large Tablets & Smaller (max-width: 992px) ========== */
+@media (max-width: 992px) {
+
+    .pages a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .about-content {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .education-content {
+        flex-direction: column;
+    }
+
+    .education-left,
+    .education-right {
+        width: 90%;
+    }
+
+    .show-skills {
+        flex-wrap: wrap;
+    }
+
+    .programs {
+        margin: 5px;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .all-images img {
+        width: 250px;
+    }
+}
+
+/* ========== Tablets & Phones (max-width: 768px) ========== */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .pages {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        height: 65vh;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .about-content-left img {
+        width: 100%;
+    }
+
+    .all-images {
+        padding: 10px;
+    }
+
+    .all-images img {
+        width: 45%;
+        margin: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* ========== Mobile Phones (max-width: 480px) ========== */
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 120px;
+    }
+
+    .pages a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .programs {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .all-images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .left-footer a,
+    .right-footer a {
+        font-size: 18px;
+    }
 }
